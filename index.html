@@ -72,7 +72,7 @@
             <div class="ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
-                <h1 class="font-light text-base">0 BDT</h1>
+                <h1 id="total-donation" class="font-light text-base">0 BDT</h1>
               </button>
               <h2 class="font-bold text-xl">
                 Donate for Flood at Noakhali, Bangladesh
@@ -85,7 +85,7 @@
                 supporting the relief efforts and making a positive impact on
                 the lives of those in need.
               </p>
-              <input
+              <input id="input-add-money"
                 type="number"
                 placeholder="Write donation amount"
                 class="input input-bordered w-full"
@@ -106,7 +106,7 @@
             <div class="ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
-                <h1 class="font-light text-base">600 BDT</h1>
+                <h1 id="total-donation2" class="font-light text-base">600 BDT</h1>
               </button>
               <h2 class="font-bold text-xl">
                 Donate for Flood Relief in Feni,Bangladesh
@@ -121,13 +121,13 @@
                 towards making a real difference. Please consider donating today
                 to assist those in urgent need.
               </p>
-              <input
+              <input id="input-add-money2"
                 type="number"
                 placeholder="Write donation amount"
                 class="input input-bordered w-full"
               />
               <button
-                id="btn-donate-now"
+                id="btn-donate-now2"
                 class="btn font-semibold text-xl text-[#111111] bg-[#B4F461] w-full"
               >
                 Donate Now
@@ -142,7 +142,7 @@
             <div class="ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
-                <h1 class="font-light text-base">2400 BDT</h1>
+                <h1 id="total-donation3"  class="font-light text-base">2400 BDT</h1>
               </button>
               <h2 class="font-bold text-xl">
                 Aid for Injured in the Quota Movement
@@ -158,13 +158,13 @@
                 recovery. Please consider making a donation to support these
                 brave individuals in their time of need.
               </p>
-              <input
+              <input id="input-add-money3"
                 type="number"
                 placeholder="Write donation amount"
                 class="input input-bordered w-full"
               />
               <button
-                id="btn-donate-now"
+                id="btn-donate-now3"
                 class="btn font-semibold text-xl text-[#111111] bg-[#B4F461] w-full"
               >
                 Donate Now
@@ -173,6 +173,16 @@
           </div>
         </div>
       </section>
+
+      <div id="congrats-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full h-full text-center">
+          <h2 class="text-2xl font-bold text-black mb-4">Congrates!</h2>
+          <img class="text-center"  src="assets/coin.png" alt="">
+          <p>You have donated for humankind</p>
+          <p class="font-semibold">Successfully</p>
+          <button id="close-modal">Close confirmation</button>
+        </div>
+      </div>
     </main>
 
     <footer class="bg-[#F9F7F3]  py-8 max-w-[1440px] mx-auto">
@@ -183,5 +193,6 @@
     </footer>
 
     <script src="js/blog.js"></script>
+    <script src="js/donate.js"></script>
   </body>
 </html>
