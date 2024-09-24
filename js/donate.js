@@ -44,12 +44,16 @@ function myDonation(addMoneyId, donationId) {
   const newBalance = balance - addMoney;
   const totalDonation = addMoney + donation;
   document.getElementById("my-balance").innerText = newBalance;
-  const p = document.createElement('p');
-  p.innerText= ` 
-  Added: ${addMoney} tk.
+  const div = document.createElement('div');
+  div.innerHTML= ` 
+  <div class="p-8 space-y-4 border border-[#1111111A] mb-4 rounded-lg">
+   <p class="text-xl font-bold text-[#111111]">${addMoney} Taka is donated.</p>
+  <p class="text-base font-light text-[#111111B3]">Date: ${new Date()} </p>
+  </div>
+ 
   `;
   
-  document.getElementById('history-container').appendChild(p);
+  document.getElementById('history-container').appendChild(div);
   
   document.getElementById(donationId).innerText = totalDonation;
 
