@@ -25,50 +25,49 @@
   <body class="font">
     <header class="max-w-full mx-auto sticky top-0 z-50">
       <div class="bg-[#F9F7F3]">
-        <div class="navbar max-w-6xl mx-auto py-6 pb-8">
-          <div class="navbar-start">
+        <div class="navbar max-w-6xl mx-auto py-6 md:pb-8 flex flex-col md:flex-row items-center justify-between">
+          <div class="md:navbar-start mb-3 md:mb-0">
             <button onclick="myBlog()"
               id="btn-blog"
-              class="btn font-semibold text-xl text-[#111111] bg-[#B4F461] px-8"
+              class="btn font-semibold text-base md:text-xl text-[#111111] bg-[#B4F461] px-8"
             >
               Blog
             </button>
           </div>
-          <div class="navbar-center">
+          <div class="navbar-center  mb-3 md:mb-0">
             <img src="assets/logo.png" alt="" />
             <h1 class="text-xl ml-4 font-semibold text-[#111111]">
               Donate Bangladesh
             </h1>
           </div>
-          <div class="navbar-end">
+          <div class="md:navbar-end">
             <img src="assets/coin.png" alt="" />
             <h1
-              class="text-xl ml-4 font-medium text-[#111111B3]"
+              class="text-base md:text-xl ml-4 font-medium text-[#111111B3]"
             >
              <span id="my-balance">5500</span> BDT
             </h1>
           </div>
         </div>
       </div>
-      <div class="text-center  gap-6 flex items-center justify-center backdrop-blur-lg pt-10 pb-4 ">
-        <button id="btn-donation" class="btn font-semibold text-xl bg-[#B4F461]">
+      <div class="text-center  gap-6 flex items-center justify-center backdrop-blur-lg pt-2 md:pt-10 pb-2 md:pb-4">
+        <button id="btn-donation" class="btn font-semibold text-base md:text-xl bg-[#B4F461]">
           Donation
         </button>
-        <button id="btn-history" class="btn font-semibold text-xl bg-white">
+        <button id="btn-history" class="btn font-semibold text-base md:text-xl bg-white">
           History
         </button>
       </div>
     </header>
 
     <main class="max-w-[1440px] mx-auto">
-      <section id="donation-cards" class="max-w-6xl mx-auto mt-8 mb-20">
-
+      <section id="donation-cards" class="max-w-6xl mx-auto mt-8 mb-20 p-5 lg:p-0">
         <div class="space-y-8">
           <div
-            class="card lg:card-side bg-base-100 border border-[#1111111A] lg:p-8"
+            class="card lg:card-side bg-base-100 border border-[#1111111A] p-4 lg:p-8"
           >
-            <img src="assets/noakhali.png" alt="Album" />
-            <div class="ml-8 space-y-4">
+            <img class="mb-4 lg:mb-0" src="assets/noakhali.png" alt="Album" />
+            <div class="lg:ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
                 <h1 class="font-light text-base"><span id="total-donation">0</span> BDT</h1>
@@ -99,10 +98,10 @@
           </div>
 <!--  -->
           <div
-            class="card lg:card-side bg-base-100 border border-[#1111111A] lg:p-8"
+            class="card lg:card-side bg-base-100 border border-[#1111111A] p-4 lg:p-8"
           >
-            <img src="assets/feni.png" alt="Album" />
-            <div class="ml-8 space-y-4">
+            <img class="mb-4 lg:mb-0" src="assets/feni.png" alt="Album" />
+            <div class="lg:ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
                 <h1 class="font-light text-base"><span id="total-donation2">600</span> BDT</h1>
@@ -135,10 +134,10 @@
           </div>
 <!--  -->
           <div
-            class="card lg:card-side bg-base-100 border border-[#1111111A] lg:p-8"
+            class="card lg:card-side bg-base-100 border border-[#1111111A] p-4 lg:p-8"
           >
-            <img src="assets/quota-protest.png" alt="Album" />
-            <div class="ml-8 space-y-4">
+            <img class="mb-4 lg:mb-0" src="assets/quota-protest.png" alt="Album" />
+            <div class="lg:ml-8 space-y-4">
               <button class="btn">
                 <img src="assets/coin.png" alt="" />
                 <h1 class="font-light text-base"><span id="total-donation3">2400</span> BDT</h1>
@@ -205,9 +204,9 @@
       </div>
     </main>
 
-    <footer class="bg-[#F9F7F3]  py-8 max-w-full mx-auto">
+    <footer class="bg-[#F9F7F3]  py-12 max-w-full mx-auto">
         <div class="text-center">
-            copyright @2024 
+
         </div>
 
     </footer>

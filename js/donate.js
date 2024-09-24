@@ -50,7 +50,6 @@ function myDonation(addMoneyId, donationId) {
    <p class="text-xl font-bold text-[#111111]">${addMoney} Taka is donated.</p>
   <p class="text-base font-light text-[#111111B3]">Date: ${new Date()} </p>
   </div>
- 
   `;
   
   document.getElementById('history-container').appendChild(div);
